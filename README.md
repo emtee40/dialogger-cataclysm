@@ -1,31 +1,26 @@
-Dialogger
+Dialogger: Dark Days Ahead
 =========
+
+This is a fork of [Dialogger](https://github.com/etodd/dialogger) to support dialog tree generation for [Cataclysm: Dark Days Ahead](https://github.com/CleverRaven/Cataclysm-DDA).
 
 [![Dialogger](http://i.imgur.com/ojQbysnl.png)](http://i.imgur.com/ojQbysn.png)
 
-Dialogger is a simple dialogue graph editor. It saves your dialogue graph in
-two file formats:
+Dialogger is a simple dialogue graph editor that saves your dialog graph as JSON.
 
-- **.dl** - JSON file including all visual layout information
-- **.dlz** - optimized JSON, easier and faster to parse
-
-It uses [NW.js](http://nwjs.io/) and [JointJS](http://www.jointjs.com/).
+It uses [JointJS](http://www.jointjs.com/).
 
 Read more about the rationale
 [here](http://etodd.io/2014/05/16/the-poor-mans-dialogue-tree/).
 
+Dialogger: Dark Days Ahead departs from Dialogger development by eschewing [NW.js](http://nwjs.io/) in order to keep dependencies and execution model simple.
+This can be revisited as needed, the current system doesn't even work.
+
 Running
 -------
 
-Binaries are provided, but if you want to hack on the project, first download
-the NW.js SDK, then:
+Visit https://cleverraven.github.io/dialogger/ to edit Cataclysm: Dark Days Ahead dialog graphs.
 
-```shell
-cd /path/to/app
-/path/to/nwjs/nw .
-```
-
-See the [NW.js docs](http://docs.nwjs.io/) for more info.
+To work on D:DDA, clone this repository and serve the pages with a minimal webserver such as a Python [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html).
 
 The MIT License
 ---------------
