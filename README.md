@@ -20,7 +20,10 @@ Running
 
 Visit https://cleverraven.github.io/dialogger/ to edit Cataclysm: Dark Days Ahead dialog graphs.
 
-To work on D:DDA, clone this repository and serve the pages with a minimal webserver such as a Python [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html).
+To work on D:DDA, clone this repository and serve the pages with the included minimal webserver:
+```
+./test_server.py
+```
 
 The MIT License
 ---------------
